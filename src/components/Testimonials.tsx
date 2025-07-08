@@ -4,21 +4,21 @@ import React from 'react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Our payment processing efficiency increased by 40% and transaction failures dropped to near zero. The automation features are game-changing.",
+      quote: "Alex delivered our e-commerce platform ahead of schedule with exceptional attention to detail. The performance improvements were remarkable - 40% faster load times!",
       author: "Sarah Johnson",
-      position: "CFO at TechCorp",
+      position: "Product Manager at TechFlow",
       avatar: "bg-cosmic-light/30"
     },
     {
-      quote: "The real-time analytics and fraud detection capabilities have saved us millions. We can spot issues before they become problems.",
+      quote: "Working with Alex was fantastic. Their React expertise and clean coding practices transformed our legacy system into a modern, maintainable application.",
       author: "Michael Chen",
-      position: "Head of Risk at FinanceFlow",
+      position: "CTO at StartupLab",
       avatar: "bg-cosmic-light/20"
     },
     {
-      quote: "Compliance used to be a nightmare. Now our regulatory reporting is automated and we're always audit-ready.",
-      author: "Leila Rodriguez",
-      position: "Operations Director at GlobalPay",
+      quote: "Alex's frontend skills are top-notch. They created a beautiful, responsive dashboard that our users love. Great communication and problem-solving throughout the project.",
+      author: "Elena Rodriguez",
+      position: "Design Lead at CreativeStudio",
       avatar: "bg-cosmic-light/40"
     }
   ];
@@ -31,10 +31,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-foreground">
-            Trusted by finance teams worldwide
+            Client Testimonials
           </h2>
           <p className="text-muted-foreground text-lg">
-            See how our platform transforms financial operations for businesses
+            What clients say about working with me on their projects
           </p>
         </div>
         

@@ -1,58 +1,58 @@
 
 import React, { useState } from 'react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { ChevronDown, Layers, Grid3x3, ListCheck, BookOpen, Star, LayoutDashboard } from "lucide-react";
+import { ChevronDown, Code, Palette, Smartphone, Globe, Zap, Users } from "lucide-react";
 
 const Features = () => {
   const [openFeature, setOpenFeature] = useState<number | null>(null);
   
   const features = [
     {
-      title: "Payment Automation",
-      description: "Automate payment processing and reconciliation to reduce manual errors and improve efficiency.",
-      expandedDescription: "Set up automated payment workflows with custom approval chains. Schedule recurring payments, automate invoice processing, and create conditional rules for different transaction types. Reduce manual intervention and ensure compliance with financial regulations.",
+      title: "Frontend Development",
+      description: "Expert in React, TypeScript, and modern JavaScript frameworks for building scalable applications.",
+      expandedDescription: "Specialized in React ecosystem with hooks, context, and state management. Proficient in TypeScript for type-safe development, Next.js for full-stack applications, and modern build tools like Vite and Webpack. Experience with testing frameworks including Jest and React Testing Library.",
       icon: (
-        <Layers size={24} className="text-cosmic-accent" />
+        <Code size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Real-time Analytics",
-      description: "Monitor financial performance with real-time dashboards and comprehensive reporting.",
-      expandedDescription: "Track key financial metrics with customizable dashboards. Monitor cash flow, payment volumes, and transaction success rates in real-time. Generate detailed reports for stakeholders and identify trends before they impact your business.",
+      title: "UI/UX Design",
+      description: "Creating beautiful, intuitive interfaces with a focus on user experience and accessibility.",
+      expandedDescription: "Strong eye for design with experience in Figma, Adobe Creative Suite, and design systems. Expertise in CSS3, Sass, Tailwind CSS, and CSS-in-JS solutions. Committed to accessibility standards (WCAG) and responsive design principles across all devices.",
       icon: (
-        <Grid3x3 size={24} className="text-cosmic-accent" />
+        <Palette size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Risk Management",
-      description: "Advanced fraud detection and risk assessment tools to protect your business.",
-      expandedDescription: "Utilize machine learning algorithms to detect suspicious transactions and prevent fraud. Set up custom risk rules, monitor transaction patterns, and receive instant alerts for unusual activity. Protect your business with enterprise-grade security measures.",
+      title: "Mobile-First Development",
+      description: "Responsive design and mobile optimization for seamless experiences across all devices.",
+      expandedDescription: "Progressive Web App (PWA) development with offline capabilities. React Native experience for cross-platform mobile apps. Performance optimization techniques including lazy loading, code splitting, and efficient bundle management for mobile networks.",
       icon: (
-        <LayoutDashboard size={24} className="text-cosmic-accent" />
+        <Smartphone size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Compliance Tools",
-      description: "Built-in compliance features to meet regulatory requirements effortlessly.",
-      expandedDescription: "Stay compliant with financial regulations across multiple jurisdictions. Automated KYC/AML checks, transaction monitoring, and regulatory reporting. Generate audit trails and maintain documentation to meet compliance standards.",
+      title: "Web Performance",
+      description: "Optimizing applications for speed, SEO, and exceptional user experience.",
+      expandedDescription: "Core Web Vitals optimization, lighthouse scoring improvements, and advanced caching strategies. Experience with CDNs, image optimization, and modern web standards. SEO best practices and semantic HTML for better search engine visibility.",
       icon: (
-        <ListCheck size={24} className="text-cosmic-accent" />
-      )
-    },
-    {
-      title: "Multi-currency Support",
-      description: "Process payments in multiple currencies with real-time exchange rates.",
-      expandedDescription: "Accept and process payments in over 150 currencies with competitive exchange rates. Automatic currency conversion, hedging tools, and multi-currency accounting. Expand your business globally with seamless international payment processing.",
-      icon: (
-        <Star size={24} className="text-cosmic-accent" />
+        <Zap size={24} className="text-cosmic-accent" />
       )
     },
     {
       title: "API Integration",
-      description: "Powerful APIs for seamless integration with your existing financial systems.",
-      expandedDescription: "Connect with your ERP, accounting software, and banking systems through our comprehensive APIs. Real-time webhooks, detailed documentation, and SDKs for popular programming languages. Build custom integrations that fit your unique business needs.",
+      description: "Seamless integration with REST APIs, GraphQL, and real-time data synchronization.",
+      expandedDescription: "Experience with REST API consumption, GraphQL queries and mutations, and WebSocket implementations. State management with Redux, Zustand, and React Query. Authentication flows including OAuth, JWT, and session management.",
       icon: (
-        <BookOpen size={24} className="text-cosmic-accent" />
+        <Globe size={24} className="text-cosmic-accent" />
+      )
+    },
+    {
+      title: "Team Collaboration",
+      description: "Strong communication skills and experience working in agile development environments.",
+      expandedDescription: "Git workflow management, code reviews, and pair programming experience. Familiar with project management tools like Jira, Trello, and Linear. Documentation writing and technical communication with stakeholders and cross-functional teams.",
+      icon: (
+        <Users size={24} className="text-cosmic-accent" />
       )
     }
   ];
@@ -66,10 +66,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter">
-            Everything your business needs
+            Skills & Expertise
           </h2>
           <p className="text-cosmic-muted text-lg">
-            Comprehensive fintech solutions to streamline your financial operations and drive growth
+            Comprehensive frontend development skills to bring your ideas to life with modern web technologies
           </p>
         </div>
         
@@ -100,7 +100,7 @@ const Features = () => {
                   <p className="text-cosmic-muted">{feature.expandedDescription}</p>
                   <div className="mt-4 flex justify-end">
                     <button className="text-cosmic-accent hover:text-cosmic-accent/80 text-sm font-medium">
-                      Learn more →
+                      View projects →
                     </button>
                   </div>
                 </div>

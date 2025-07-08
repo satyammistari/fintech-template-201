@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Logo from './Logo';
-import { Menu, X, CircleDot, LayoutDashboard, DollarSign, Sun, Moon } from 'lucide-react';
+import { Menu, X, User, Code, Briefcase, Sun, Moon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Switch } from '@/components/ui/switch';
@@ -68,7 +68,7 @@ const Header = () => {
                 )}
                 onClick={handleNavClick('features')}
               >
-                <CircleDot size={16} className="inline-block mr-1.5" /> Features
+                <Code size={16} className="inline-block mr-1.5" /> Skills
               </ToggleGroupItem>
               <ToggleGroupItem 
                 value="dashboard" 
@@ -78,7 +78,7 @@ const Header = () => {
                 )}
                 onClick={handleNavClick('dashboard')}
               >
-                <LayoutDashboard size={16} className="inline-block mr-1.5" /> Dashboard
+                <Briefcase size={16} className="inline-block mr-1.5" /> Projects
               </ToggleGroupItem>
               <ToggleGroupItem 
                 value="pricing" 
@@ -88,7 +88,7 @@ const Header = () => {
                 )}
                 onClick={handleNavClick('pricing')}
               >
-                <DollarSign size={16} className="inline-block mr-1.5" /> Pricing
+                <User size={16} className="inline-block mr-1.5" /> About
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -105,7 +105,7 @@ const Header = () => {
                 }`}
                 onClick={handleNavClick('features')}
               >
-                <CircleDot size={16} className="inline-block mr-1.5" /> Features
+                <Code size={16} className="inline-block mr-1.5" /> Skills
               </a>
               <a 
                 href="#dashboard" 
@@ -114,7 +114,7 @@ const Header = () => {
                 }`}
                 onClick={handleNavClick('dashboard')}
               >
-                <LayoutDashboard size={16} className="inline-block mr-1.5" /> Dashboard
+                <Briefcase size={16} className="inline-block mr-1.5" /> Projects
               </a>
               <a 
                 href="#pricing" 
@@ -123,7 +123,7 @@ const Header = () => {
                 }`}
                 onClick={handleNavClick('pricing')}
               >
-                <DollarSign size={16} className="inline-block mr-1.5" /> Pricing
+                <User size={16} className="inline-block mr-1.5" /> About
               </a>
               
               {/* Add theme toggle for mobile */}
@@ -155,7 +155,7 @@ const Header = () => {
             <Sun size={18} className={`${!isDarkMode ? 'text-primary' : 'text-muted-foreground'}`} />
           </div>
           <div className="rounded-2xl">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted">Log in</Button>
+            <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted">Contact</Button>
           </div>
         </div>
       </header>
